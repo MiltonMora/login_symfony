@@ -2,27 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/RolCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/RolHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/orm/user/UserRol.orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewUserCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewUserRolCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/NewUserHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/NewUserRolHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Api/User/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Model/UserRol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserRolInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRolRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ourproyect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ourproyect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/orm/mapping/Rol.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/mapping/Rol.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/orm/mapping/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/mapping/User.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Services/autowrite.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/orm/mapping/Rol.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/user/Rol.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/orm/mapping/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/user/User.orm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/Role.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/tester.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/tester.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Rol.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Model/Rol.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/RolRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/RolRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210207175305.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210209194235.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Users/Command/RolCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewRolCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Users/RolHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/NewRolHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Api/tester.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
@@ -128,6 +132,8 @@
       <path value="$PROJECT_DIR$/vendor/league/tactician-container" />
       <path value="$PROJECT_DIR$/vendor/league/tactician-bundle" />
       <path value="$PROJECT_DIR$/vendor/league/tactician" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1o9uvLwjrt8O9kahWxrMEDImEXp" />
@@ -151,8 +157,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ourproyect\src\Repository" />
-      <recent name="C:\laragon\www\ourproyect\src\Entity" />
-      <recent name="C:\laragon\www\ourproyect\config\orm\mapping" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Users" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Users\Command" />
+      <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Ports" />
+      <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Model" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -168,7 +176,7 @@
       <workItem from="1612711376159" duration="3763000" />
       <workItem from="1612720497191" duration="3502000" />
       <workItem from="1612894175984" duration="10045000" />
-      <workItem from="1612961854570" duration="8132000" />
+      <workItem from="1612961854570" duration="20764000" />
     </task>
     <servers />
   </component>
@@ -180,26 +188,34 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#Inspections/0.0.1366.738@0.0.1366.738" timestamp="1612968418276" />
+    <state x="275" y="9" width="816" height="729" key="#Intentions" timestamp="1612971210645">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="9" width="816" height="729" key="#Intentions/0.0.1366.738@0.0.1366.738" timestamp="1612971210645" />
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612721367650">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1612721367650" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1612970433468">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1612983918258">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1612970433468" />
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612970477767">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1612983918258" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612984246337">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1612970477767" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1612984246337" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612976795827">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1612976795827" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1612901578865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1612901578865" />
-    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1612970369414">
+    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1612978281119">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1612970369414" />
+    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1612978281119" />
     <state x="517" y="292" key="NewPhpFileDialog" timestamp="1612898882375">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -3,11 +3,12 @@
 namespace App\Repository;
 
 use App\Domain\Users\Model\User;
+use App\Domain\Users\Ports\UserInterface;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class UserRepository extends BaseRepository
+class UserRepository extends BaseRepository implements UserInterface
 {
     protected static function entityClass(): string
     {

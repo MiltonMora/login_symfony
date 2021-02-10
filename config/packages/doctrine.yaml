@@ -13,5 +13,5 @@ doctrine:
             Users:
                 is_bundle: false
                 type: xml
-                dir: '%kernel.project_dir%/config/orm/mapping'
+                dir: '%kernel.project_dir%/config/orm/user'
                 prefix: App\Domain\Users\Model

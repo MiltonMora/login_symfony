@@ -4,7 +4,7 @@
 namespace App\Application\Users\Command;
 
 
-class RolCommand
+class NewRolCommand
 {
     private string $name;
     
