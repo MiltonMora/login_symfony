@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="" />
+    <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/orm/mapping/Rol.orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Api/tester.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Rol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/RolRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/config/Services/autowrite.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +37,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -110,7 +124,15 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Repository" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ourproyect\src\Repository" />
+      <recent name="C:\laragon\www\ourproyect\src\Entity" />
+      <recent name="C:\laragon\www\ourproyect\config\orm\mapping" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -124,6 +146,8 @@
       <updated>1612711361978</updated>
       <workItem from="1612711376159" duration="3763000" />
       <workItem from="1612720497191" duration="3502000" />
+      <workItem from="1612894175984" duration="10045000" />
+      <workItem from="1612961854570" duration="237000" />
     </task>
     <servers />
   </component>
@@ -139,14 +163,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1612712281864" />
-    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1612711923969">
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612899072603">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1612711923969" />
-    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1612722127507">
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1612899072603" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1612901578865">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1612722127507" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1612901578865" />
+    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1612898946656">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1612898946656" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1612898882375">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1612898882375" />
     <state x="184" y="11" key="SettingsEditor" timestamp="1612723817382">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
