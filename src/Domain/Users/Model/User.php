@@ -1,8 +1,7 @@
 <?php
 
 
-namespace App\Entity;
-
+namespace App\Domain\Users\Model;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Uid\Uuid;

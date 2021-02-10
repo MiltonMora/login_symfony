@@ -4,16 +4,17 @@
 namespace App\Controller\Api;
 
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use App\Application\Users\Role;
+use App\Application\Users\Command\RolCommand;
+use App\Controller\Api\AbstractApiController;
+
 
 /**
  *  @Route("/api")
  */
-class tester extends AbstractController
+class tester extends AbstractApiController
 {
     /**
      *  @Route("/hello", methods={"GET"})
@@ -32,11 +33,12 @@ class tester extends AbstractController
      */
     public function newProfile(Request $request)
     {
-        $data = new Role();
-        $data->handle($request->get('name'));
+        $result = $this->commandBus->handle(
+            new RolCommand($request->get('name'))
+        );
         $response = new JsonResponse();
         $response->setData([
-                "data" => $data
+                "data" => $result
         ]);
         return $response;
     }

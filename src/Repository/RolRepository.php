@@ -2,12 +2,13 @@
 
 namespace App\Repository;
 
-use App\Entity\Rol;
+use App\Domain\Users\Ports\RolInterface;
+use App\Domain\Users\Model\Rol;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
-class RolRepository extends BaseRepository
+class RolRepository extends BaseRepository implements RolInterface
 {
     protected static function entityClass(): string
     {
@@ -27,7 +28,7 @@ class RolRepository extends BaseRepository
      * @throws ORMException
      * @throws OptimisticLockException
      */
-    public function save(Rol $rol): void
+    public function store(Rol $rol): void
     {
         $this->saveEntity($rol);
     }
