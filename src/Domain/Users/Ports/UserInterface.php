@@ -10,4 +10,5 @@ interface UserInterface
     public function save(User $User);
 
     public function findOneByEmailOrFail(string $email);
+
 }

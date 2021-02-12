@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Domain\Users\Model\User;
+use App\Domain\Users\Model\UserRol;
 use App\Domain\Users\Ports\UserInterface;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
@@ -32,4 +33,5 @@ class UserRepository extends BaseRepository implements UserInterface
     {
         $this->saveEntity($user);
     }
+
 }

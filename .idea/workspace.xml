@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/orm/user/UserRol.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewUserCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewUserRolCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/NewUserHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/NewUserRolHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Api/User/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Model/UserRol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserRolInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRolRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ourproyect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ourproyect.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Services/autowrite.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/orm/mapping/Rol.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/user/Rol.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/orm/mapping/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/user/User.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210207175305.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210209194235.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/Command/RolCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewRolCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/RolHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/NewRolHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/tester.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRolRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRolRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,10 +175,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1612721367650" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1612983918258">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1613161214224">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1612983918258" />
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1613161214224" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612984246337">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -212,10 +191,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1612901578865" />
-    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1612978281119">
+    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1613160248453">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1612978281119" />
+    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1613160248453" />
     <state x="517" y="292" key="NewPhpFileDialog" timestamp="1612898882375">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
