@@ -3,14 +3,27 @@
     <entity name="App\Domain\Users\Model\UserRol" table="user_rol" >
         <id name="id" type="string" length="36" />
 
-        <field name="userId" length="36" column="user_id"/>
-        <field name="rolId" length="36" column="rol_id"/>
+        <many-to-one
+                field="rol"
+                target-entity="App\Domain\Users\Model\Rol"
+                inversed-by="id">
+            <join-column nullable="false" />
+        </many-to-one>
+
+        <many-to-one
+                field="user"
+                target-entity="App\Domain\Users\Model\User"
+                inversed-by="id">
+            <join-column nullable="false" />
+        </many-to-one>
+
         <field name="createdAt" type="datetime" column="created_at"/>
         <field name="updatedAt" type="datetime" column="updated_at"/>
 
         <unique-constraints>
-            <unique-constraint columns="user_id,rol_id" name="uniq_key" />
+            <unique-constraint columns="rol_id,user_id" name="search_idx" />
         </unique-constraints>
+
         <lifecycle-callbacks>
             <lifecycle-callback type="preUpdate" method="markAsUpdated"/>
         </lifecycle-callbacks>

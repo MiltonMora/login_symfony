@@ -9,18 +9,18 @@ use Symfony\Component\Uid\Uuid;
 class UserRol
 {
     private string $id;
-    private string $userId;
-    private string $rolId;
+    private User $user;
+    private Rol $rol;
     private \DateTime $createdAt;
     private \DateTime $updatedAt;
 
     /**
      */
-    public function __construct(string $userId, $rolId)
+    public function __construct(User $userId, Rol $rolId)
     {
         $this->id = Uuid::v4()->toRfc4122();
-        $this->userId = $userId;
-        $this->rolId = $rolId;
+        $this->user = $userId;
+        $this->rol = $rolId;
         $this->createdAt = new \DateTime();
         $this->markAsUpdated();
     }
@@ -50,19 +50,19 @@ class UserRol
     }
 
     /**
-     * @param string $userId
+     * @param string $user
      */
-    public function setUserId(string $userId): void
+    public function setUser(string $user): void
     {
-        $this->userId = $userId;
+        $this->user = $user;
     }
 
     /**
-     * @param string $rolId
+     * @param string $rol
      */
-    public function setRolId(string $rolId): void
+    public function setRol(string $rol): void
     {
-        $this->rolId = $rolId;
+        $this->rol = $rol;
     }
 
 

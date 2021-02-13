@@ -29,10 +29,10 @@ class UserRolRepository extends BaseRepository implements UserRolInterface
     public function getRolesByUserId(string $userId): array
     {
         $roles = $this->objectRepository->createQueryBuilder('userRoles')
-            ->select('userRol.id')
+            ->select('(userRol.rol)')
             ->from(UserRol::class, 'userRol')
-            //->join(Rol::class, 'rol', 'WITH', 'userRol.rolId = rol.id')
-            ->where('userRol.userId = :userId')
+            ->where('userRol.user = :userId')
+            ->distinct('(userRol.rol)')
             ->setParameter('userId', $userId)
             ->getQuery()
             ->getArrayResult();

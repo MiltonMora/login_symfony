@@ -9,5 +9,7 @@ interface RolInterface
 {
     public function store(Rol $rol);
 
-    public function findOneByNameOrFail(string $name);
+    public function findOneByNameOrFail(string $name): ?Rol;
+
+    public function findByIdOrFail(string $id): ?Rol;
 }

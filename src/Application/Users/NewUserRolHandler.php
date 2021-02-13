@@ -35,7 +35,7 @@ class NewUserRolHandler
             $userEmail = $this->userPort->findOneByEmailOrFail($command->getUserEmail());
             $rolName = $this->rolPort->findOneByNameOrFail($command->getRolName());
 
-            $userRol = new  UserRol($userEmail->getId(), $rolName->getId());
+            $userRol = new  UserRol($userEmail, $rolName);
             $this->userRolPort->store($userRol);
 
             return [

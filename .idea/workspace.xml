@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210213120004.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ourproyect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ourproyect.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/orm/user/UserRol.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/user/UserRol.orm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210210194405.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Users/NewUserRolHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/NewUserRolHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Model/UserRol.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Model/UserRol.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/RolRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/RolRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRolRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRolRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +129,10 @@
       <path value="$PROJECT_DIR$/vendor/league/tactician" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
     </include_path>
   </component>
   <component name="ProjectId" id="1o9uvLwjrt8O9kahWxrMEDImEXp" />
@@ -126,20 +146,20 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Repository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/orm/user" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Model" />
-      <recent name="C:\laragon\www\ourproyect\src\Domain\Users" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ourproyect\config\orm\user" />
       <recent name="C:\laragon\www\ourproyect\src\Repository" />
       <recent name="C:\laragon\www\ourproyect\src\Application\Users" />
       <recent name="C:\laragon\www\ourproyect\src\Application\Users\Command" />
       <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Ports" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Model" />
+      <recent name="C:\laragon\www\ourproyect\src\Domain\Users" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -156,6 +176,7 @@
       <workItem from="1612720497191" duration="3502000" />
       <workItem from="1612894175984" duration="10045000" />
       <workItem from="1612961854570" duration="20764000" />
+      <workItem from="1613212556669" duration="14501000" />
     </task>
     <servers />
   </component>
@@ -179,18 +200,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1613161214224" />
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612984246337">
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613216526907">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1612984246337" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1613216526907" />
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1612976795827">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1612976795827" />
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1612901578865">
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1613234975532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1612901578865" />
+    <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1613234975532" />
     <state x="486" y="183" key="NewPhpClassDialog" timestamp="1613160248453">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -207,5 +228,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="379" y="101" width="607" height="536" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1612969745562" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1613233574863">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1613233574863" />
   </component>
 </project>

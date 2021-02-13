@@ -15,10 +15,19 @@ class RolRepository extends BaseRepository implements RolInterface
         return Rol::class;
     }
 
-    public function findOneByNameOrFail(string $name): Rol
+    public function findOneByNameOrFail(string $name): ?Rol
     {
         if (null === $rol = $this->objectRepository->findOneBy(['name' => $name])) {
             throw new NotFoundHttpException(\sprintf('rol %s not found', $name));
+        }
+
+        return $rol;
+    }
+
+    public function findByIdOrFail(string $id): ?Rol
+    {
+        if (null === $rol = $this->objectRepository->find($id)) {
+            throw new NotFoundHttpException(\sprintf('rol %s not found', $id));
         }
 
         return $rol;
