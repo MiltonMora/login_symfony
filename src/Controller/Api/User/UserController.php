@@ -20,19 +20,24 @@ class UserController extends AbstractApiController
     /**
      *  @Route("/new/user", methods={"POST"})
      */
-    public function newUser(Request $request)
+    public function newUserAndRol(Request $request)
     {
+        $response = new JsonResponse();
+        if (!$this->checkPermissions(
+            $request->headers->get('authorization'),
+            self::SUPERADMIN )) {
+            return $response->setData('Access Denied');
+        }
+
         $result = $this->commandBus->handle(
             new NewUserCommand(
                 $request->get('name'),
                 $request->get('email'),
-                $request->get('password')
+                $request->get('password'),
+                $request->get('rol')
             )
         );
-        $response = new JsonResponse();
-        $response->setData([
-            $result
-        ]);
+        $response->setData($result);
         return $response;
     }
 
@@ -41,13 +46,16 @@ class UserController extends AbstractApiController
      */
     public function newProfile(Request $request)
     {
+        $response = new JsonResponse();
+        if (!$this->checkPermissions(
+            $request->headers->get('authorization'),
+            self::SUPERADMIN )) {
+            return $response->setData('Access Denied');
+        }
         $result = $this->commandBus->handle(
             new NewRolCommand($request->get('name'))
         );
-        $response = new JsonResponse();
-        $response->setData([
-            $result
-        ]);
+        $response->setData($result);
         return $response;
     }
 
@@ -56,16 +64,19 @@ class UserController extends AbstractApiController
      */
     public function newUserProfile(Request $request)
     {
+        $response = new JsonResponse();
+        if (!$this->checkPermissions(
+            $request->headers->get('authorization'),
+            self::SUPERADMIN )) {
+            return $response->setData('Access Denied');
+        }
         $result = $this->commandBus->handle(
             new NewUserRolCommand(
                 $request->get('email'),
                 $request->get('rol')
             )
         );
-        $response = new JsonResponse();
-        $response->setData([
-            $result
-        ]);
+        $response->setData($result);
         return $response;
     }
 
