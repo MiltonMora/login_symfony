@@ -15,3 +15,8 @@ doctrine:
                 type: xml
                 dir: '%kernel.project_dir%/config/orm/user'
                 prefix: App\Domain\Users\Model
+            Business:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/config/orm/business'
+                prefix: App\Domain\Business\Model

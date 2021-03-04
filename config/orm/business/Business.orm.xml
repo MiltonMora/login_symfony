@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="App\Domain\Business\Model\Business" table="Business" >
+        <id name="id" type="string" length="36" />
+
+        <field name="name" length="100" column="name"/>
+        <field name="email" length="100" column="email" unique="true"/>
+        <field name="address" length="100" column="address"/>
+        <field name="idn" length="100" column="idn" unique="true"/>
+        <field name="createdAt" type="datetime" column="created_at"/>
+        <field name="updatedAt" type="datetime" column="updated_at"/>
+
+        <lifecycle-callbacks>
+            <lifecycle-callback type="preUpdate" method="markAsUpdated"/>
+        </lifecycle-callbacks>
+    </entity>
+</doctrine-mapping>
