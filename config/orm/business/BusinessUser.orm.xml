@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="App\Domain\Business\Model\BusinessUser" table="business_user" >
+        <id name="id" type="string" length="36" />
+
+        <many-to-one
+                field="business"
+                target-entity="App\Domain\Business\Model\Business"
+                inversed-by="id">
+            <join-column nullable="false" />
+        </many-to-one>
+
+        <many-to-one
+                field="user"
+                target-entity="App\Domain\Users\Model\User"
+                inversed-by="id">
+            <join-column nullable="false" />
+        </many-to-one>
+
+        <field name="createdAt" type="datetime" column="created_at"/>
+        <field name="updatedAt" type="datetime" column="updated_at"/>
+
+        <unique-constraints>
+            <unique-constraint columns="business_id,user_id" name="search_idx" />
+        </unique-constraints>
+
+        <lifecycle-callbacks>
+            <lifecycle-callback type="preUpdate" method="markAsUpdated"/>
+        </lifecycle-callbacks>
+    </entity>
+</doctrine-mapping>

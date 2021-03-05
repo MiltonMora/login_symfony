@@ -20,4 +20,9 @@ class BusinessRepository extends BaseRepository implements BusinessInterface
     {
         $this->saveEntity($business);
     }
+
+    public function getBusinessById(string $businessId)
+    {
+        return $this->objectRepository->find($businessId);
+    }
 }

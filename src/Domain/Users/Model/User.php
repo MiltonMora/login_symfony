@@ -12,6 +12,7 @@ class User implements UserInterface
     private string $name;
     private string $email;
     private string $password;
+    private bool $status;
     private \DateTime $createdAt;
     private \DateTime $updatedAt;
 
@@ -24,6 +25,7 @@ class User implements UserInterface
         $this->setEmail($email);
         $this->password = $password;
         $this->createdAt = new \DateTime();
+        $this->status = false;
         $this->markAsUpdated();
     }
 
@@ -103,6 +105,22 @@ class User implements UserInterface
     public function markAsUpdated(): void
     {
         $this->updatedAt = new  \DateTime();
+    }
+
+    /**
+     * @return bool
+     */
+    public function isStatus(): bool
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param bool $status
+     */
+    public function setStatus(bool $status): void
+    {
+        $this->status = $status;
     }
 
 

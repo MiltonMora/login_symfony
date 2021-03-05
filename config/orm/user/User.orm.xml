@@ -6,6 +6,7 @@
         <field name="name" length="100" column="name"/>
         <field name="email" length="100" column="email" unique="true"/>
         <field name="password" length="100" column="password"/>
+        <field name="status" length="100" type="boolean" column="status"/>
         <field name="createdAt" type="datetime" column="created_at"/>
         <field name="updatedAt" type="datetime" column="updated_at"/>
 

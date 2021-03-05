@@ -9,4 +9,6 @@ interface BusinessInterface
 {
     public function store(Business $business);
 
+    public function getBusinessById(string $businessId);
+
 }

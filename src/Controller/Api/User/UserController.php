@@ -34,7 +34,8 @@ class UserController extends AbstractApiController
                 $request->get('name'),
                 $request->get('email'),
                 $request->get('password'),
-                $request->get('rol')
+                $request->get('rol'),
+                $request->get('business')
             )
         );
         $response->setData($result);

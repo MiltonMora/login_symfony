@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping">
-    <entity name="App\Domain\Business\Model\Business" table="Business" >
+    <entity name="App\Domain\Business\Model\Business" table="business" >
         <id name="id" type="string" length="36" />
 
         <field name="name" length="100" column="name"/>

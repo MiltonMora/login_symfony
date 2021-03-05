@@ -2,12 +2,11 @@
 
 namespace App\Repository;
 
-use App\Domain\Users\Model\User;
-use App\Domain\Users\Model\UserRol;
-use App\Domain\Users\Ports\UserInterface;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use App\Domain\Users\Model\User;
+use App\Domain\Users\Ports\UserInterface;
 
 class UserRepository extends BaseRepository implements UserInterface
 {
@@ -34,4 +33,8 @@ class UserRepository extends BaseRepository implements UserInterface
         $this->saveEntity($user);
     }
 
+    public function findById(string $userId)
+    {
+        return $this->objectRepository->find($userId);
+    }
 }

@@ -11,4 +11,6 @@ interface UserInterface
 
     public function findOneByEmailOrFail(string $email);
 
+    public function findById(string $userId);
+
 }
