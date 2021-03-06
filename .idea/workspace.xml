@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/ActivateUserAndSetPasswordHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/ActivateUserAndSetPasswordCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Api/User/PasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Users/ActivateUserAndSetPasswordHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/ActivateUserAndSetPasswordHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +167,7 @@
       <workItem from="1614864992050" duration="11997000" />
       <workItem from="1614883992968" duration="5492000" />
       <workItem from="1614937208334" duration="14678000" />
-      <workItem from="1615029931860" duration="4330000" />
+      <workItem from="1615029931860" duration="5788000" />
     </task>
     <servers />
   </component>
