@@ -2,34 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/orm/business/BusinessUser.orm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Business/Command/NewBusinessUserCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Business/NewBusinessUserHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Business/Model/BusinessUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Business/Ports/BusinessUserInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/Business/BusinessUserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/emails/signUp.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ourproyect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ourproyect.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/ActivateUserAndSetPasswordHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/ActivateUserAndSetPasswordCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Api/User/PasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/orm/business/Business.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/business/Business.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/orm/user/User.orm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/orm/user/User.orm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210210184951.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210210194321.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210213120004.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210304201524.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/Command/NewUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewUserCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/NewUserHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/NewUserHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/Business/BusinessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/Business/BusinessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Business/Ports/BusinessInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Business/Ports/BusinessInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/UserInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Business/BusinessRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Business/BusinessRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,21 +133,21 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Application/Business" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Application/Users" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ourproyect\src\Application\Users" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Users\Command" />
+      <recent name="C:\laragon\www\ourproyect\src\Controller\Api\User" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Business" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Business\Command" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ourproyect\src\Controller\Api\Business" />
       <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Model" />
       <recent name="C:\laragon\www\ourproyect\src\Domain\Users" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ourproyect\src\Application\Business" />
-      <recent name="C:\laragon\www\ourproyect\src\Application\Business\Command" />
-      <recent name="C:\laragon\www\ourproyect\src\Repository\Business" />
-      <recent name="C:\laragon\www\ourproyect\src\Domain\Business\Ports" />
-      <recent name="C:\laragon\www\ourproyect\src\Domain\Business\Model" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -190,7 +167,8 @@
       <workItem from="1613212556669" duration="14751000" />
       <workItem from="1614864992050" duration="11997000" />
       <workItem from="1614883992968" duration="5492000" />
-      <workItem from="1614937208334" duration="14341000" />
+      <workItem from="1614937208334" duration="14678000" />
+      <workItem from="1615029931860" duration="4330000" />
     </task>
     <servers />
   </component>
@@ -214,18 +192,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="422" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1614886841314" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1614950198424">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1615032474469">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1614950198424" />
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1615032474469" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1614940588666">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1614940588666" />
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614888658065">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615032312600">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1614888658065" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1615032312600" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1613234975532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
