@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/ActivateUserAndSetPasswordHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/ActivateUserAndSetPasswordHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +166,8 @@
       <workItem from="1614883992968" duration="5492000" />
       <workItem from="1614937208334" duration="14678000" />
       <workItem from="1615029931860" duration="5788000" />
+      <workItem from="1615130010770" duration="1668000" />
+      <workItem from="1615136329458" duration="2433000" />
     </task>
     <servers />
   </component>
