@@ -8,4 +8,6 @@ interface BusinessUserInterface
 {
     public function store(BusinessUser $businessUser);
 
+    public function findOrFailByUserId(string $userId);
+
 }

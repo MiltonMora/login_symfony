@@ -38,4 +38,8 @@ class UserRepository extends BaseRepository implements UserInterface
         return $this->objectRepository->find($userId);
     }
 
+    public function all()
+    {
+        return $this->objectRepository->findAll();
+    }
 }

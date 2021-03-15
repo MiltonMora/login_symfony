@@ -9,4 +9,6 @@ interface UserRolInterface
 {
     public function store(UserRol $userRol);
 
+    public function getRolesByUserId(string $userId);
+
 }

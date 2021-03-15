@@ -13,4 +13,6 @@ interface UserInterface
 
     public function findById(string $userId);
 
+    public function all();
+
 }

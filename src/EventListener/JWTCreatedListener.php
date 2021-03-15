@@ -6,22 +6,26 @@ use App\Domain\Users\Ports\RolInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\Event\JWTCreatedEvent;
 use App\Repository\UserRolRepository;
 use App\Repository\UserRepository;
+use App\Repository\Business\BusinessUserRepository;
 
 class JWTCreatedListener
 {
     private UserRolRepository $userRolRepository;
     private RolInterface $rol;
     private UserRepository $user;
+    private BusinessUserRepository $businessUser;
 
     public function __construct(
         UserRolRepository $userRolRepository,
         RolInterface $rol,
-        UserRepository $user
+        UserRepository $user,
+        BusinessUserRepository $businessUser
     )
     {
         $this->userRolRepository = $userRolRepository;
         $this->rol = $rol;
         $this->user = $user;
+        $this->businessUser = $businessUser;
     }
 
 
@@ -39,7 +43,18 @@ class JWTCreatedListener
         }
 
         $dataUser = $this->user->findById($user->getId());
-
+        $pBusiness = 'all';
+        if(!in_array('SuperAdministrator', $arrayRoles)) {
+            $business = $this->businessUser->findOrFailByUserId($user->getId());
+            $arrayBusiness = array();
+            foreach ($business as $values) {
+                $data = ["id" => $values->getBusiness()->getId(),
+                 "name" => $values->getBusiness()->getName()];
+                array_push($arrayBusiness, $data);
+            }
+            $pBusiness =  $arrayBusiness;
+        }
+        $payload['business'] = $pBusiness;
         $payload['status'] = $dataUser->isStatus();
 
         $payload['roles'] = $arrayRoles;
