@@ -25,4 +25,9 @@ class BusinessRepository extends BaseRepository implements BusinessInterface
     {
         return $this->objectRepository->find($businessId);
     }
+
+    public function getAll(): array
+    {
+        return $this->objectRepository->findAll();
+    }
 }

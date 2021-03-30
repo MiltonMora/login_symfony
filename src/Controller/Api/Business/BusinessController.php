@@ -3,6 +3,7 @@
 
 namespace App\Controller\Api\Business;
 
+use App\Application\Business\Command\GetBusinessCommand;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -17,6 +18,24 @@ class BusinessController extends AbstractApiController
 {
 
     /**
+     *  @Route("", methods={"GET"})
+     */
+    public function getRoles(Request $request) {
+        $response = new JsonResponse();
+        if (!$this->checkPermissions(
+            $request->headers->get('authorization'),
+            [self::ADMIN] )) {
+            return $response->setData('Access Denied');
+        }
+        $result = $this->commandBus->handle(
+            new GetBusinessCommand()
+        );
+
+        $response->setData($result);
+        return $response;
+    }
+
+    /**
      *  @Route("/new/business", methods={"POST"})
      */
     public function newBusiness(Request $request)
@@ -24,7 +43,7 @@ class BusinessController extends AbstractApiController
         $response = new JsonResponse();
         if (!$this->checkPermissions(
             $request->headers->get('authorization'),
-            self::SUPERADMIN )) {
+            [self::SUPERADMIN] )) {
             return $response->setData('Access Denied');
         }
 
@@ -48,7 +67,7 @@ class BusinessController extends AbstractApiController
         $response = new JsonResponse();
         if (!$this->checkPermissions(
             $request->headers->get('authorization'),
-            self::SUPERADMIN )) {
+            [self::SUPERADMIN] )) {
             return $response->setData('Access Denied');
         }
 

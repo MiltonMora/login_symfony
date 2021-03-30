@@ -41,4 +41,9 @@ class RolRepository extends BaseRepository implements RolInterface
     {
         $this->saveEntity($rol);
     }
+
+    public function getAll(): array
+    {
+        return $this->objectRepository->findAll();
+    }
 }

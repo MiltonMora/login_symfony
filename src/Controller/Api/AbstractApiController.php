@@ -32,12 +32,18 @@ class AbstractApiController extends AbstractController
     {
         $data = explode('.', explode(" ", $userData)[1]);
         $data = json_decode(base64_decode($data[1]));
-        
-        if ((in_array($requiredPermits, $data->roles) || in_array(self::SUPERADMIN, $data->roles))
-            and (isset($data->status) and $data->status))
+
+
+        if(in_array(self::SUPERADMIN, $data->roles))
         {
             return true;
         }
+        foreach ($requiredPermits as $permit) {
+            if(in_array($permit, $data->roles) and (isset($data->status) and $data->status)) {
+               return true;
+            }
+        }
+
         return false;
 
     }

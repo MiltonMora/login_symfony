@@ -12,4 +12,6 @@ interface RolInterface
     public function findOneByNameOrFail(string $name): ?Rol;
 
     public function findByIdOrFail(string $id): ?Rol;
+
+    public function getAll(): array;
 }

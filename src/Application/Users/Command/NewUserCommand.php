@@ -26,24 +26,18 @@ class NewUserCommand
      */
     private string $rol;
 
-    /**
-     * @Assert\NotBlank()
-     */
-    private string $businessId;
 
     public function __construct(
         string $name,
         string $email,
         string $password,
-        string $rol,
-        string $businessId
+        string $rol
     )
     {
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
         $this->rol = $rol;
-        $this->businessId = $businessId;
     }
 
     public function getName(): string
@@ -65,11 +59,5 @@ class NewUserCommand
     {
         return $this->rol;
     }
-
-    public function getBusinessId(): string
-    {
-        return $this->businessId;
-    }
-
 
 }

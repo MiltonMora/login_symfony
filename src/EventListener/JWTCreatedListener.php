@@ -43,18 +43,7 @@ class JWTCreatedListener
         }
 
         $dataUser = $this->user->findById($user->getId());
-        $pBusiness = 'all';
-        if(!in_array('SuperAdministrator', $arrayRoles)) {
-            $business = $this->businessUser->findOrFailByUserId($user->getId());
-            $arrayBusiness = array();
-            foreach ($business as $values) {
-                $data = ["id" => $values->getBusiness()->getId(),
-                 "name" => $values->getBusiness()->getName()];
-                array_push($arrayBusiness, $data);
-            }
-            $pBusiness =  $arrayBusiness;
-        }
-        $payload['business'] = $pBusiness;
+
         $payload['status'] = $dataUser->isStatus();
 
         $payload['roles'] = $arrayRoles;

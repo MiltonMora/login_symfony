@@ -5,7 +5,6 @@ namespace App\Application\Users;
 
 use App\Application\Users\Command\NewUserCommand;
 use App\Domain\Business\Ports\BusinessInterface;
-use App\Domain\Business\Ports\BusinessUserInterface;
 use App\Domain\Users\Model\User;
 use App\Domain\Users\Ports\RolInterface;
 use App\Domain\Users\Ports\UserInterface;
@@ -13,7 +12,6 @@ use App\Domain\Users\Ports\UserRolInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use App\Domain\Users\Model\UserRol;
-use App\Domain\Business\Model\BusinessUser;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
@@ -30,9 +28,6 @@ class NewUserHandler
 
     private RolInterface $rolPort;
 
-    private BusinessInterface $businessPort;
-
-    private BusinessUserInterface $businessUserPort;
 
     private MailerInterface $mailer;
 
@@ -42,8 +37,6 @@ class NewUserHandler
         UserPasswordEncoderInterface $passwordEncoder,
         UserRolInterface $userRolPort,
         RolInterface $rolPort,
-        BusinessInterface $businessPort,
-        BusinessUserInterface $businessUserPort,
         MailerInterface $mailer
     ) {
         $this->user = $user;
@@ -51,8 +44,6 @@ class NewUserHandler
         $this->passwordEncoder = $passwordEncoder;
         $this->userRolPort = $userRolPort;
         $this->rolPort = $rolPort;
-        $this->businessPort = $businessPort;
-        $this->businessUserPort = $businessUserPort;
         $this->mailer = $mailer;
     }
 
@@ -84,14 +75,6 @@ class NewUserHandler
 
             $userRol = new  UserRol($user, $rol);
             $this->userRolPort->store($userRol);
-
-            $business = $this->businessPort->getBusinessById($command->getBusinessId());
-            $this->businessUserPort->store(
-                new BusinessUser(
-                    $business,
-                    $user
-                )
-            );
 
             $email = (new TemplatedEmail())
                 ->from('contact@assistance.iyoud.org')

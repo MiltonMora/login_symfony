@@ -25,7 +25,7 @@ class UserController extends AbstractApiController
         $response = new JsonResponse();
         if (!$this->checkPermissions(
             $request->headers->get('authorization'),
-            self::SUPERADMIN )) {
+            [self::SUPERADMIN] )) {
             return $response->setData('Access Denied');
         }
         $result = $this->commandBus->handle(
@@ -44,7 +44,7 @@ class UserController extends AbstractApiController
         $response = new JsonResponse();
         if (!$this->checkPermissions(
             $request->headers->get('authorization'),
-            self::SUPERADMIN )) {
+            [self::SUPERADMIN] )) {
             return $response->setData('Access Denied');
         }
 
@@ -53,8 +53,7 @@ class UserController extends AbstractApiController
                 $request->get('name'),
                 $request->get('email'),
                 $request->get('password'),
-                $request->get('rol'),
-                $request->get('business')
+                $request->get('rol')
             )
         );
         $response->setData($result);
@@ -69,7 +68,7 @@ class UserController extends AbstractApiController
         $response = new JsonResponse();
         if (!$this->checkPermissions(
             $request->headers->get('authorization'),
-            self::SUPERADMIN )) {
+            [self::SUPERADMIN] )) {
             return $response->setData('Access Denied');
         }
         $result = $this->commandBus->handle(
@@ -87,7 +86,7 @@ class UserController extends AbstractApiController
         $response = new JsonResponse();
         if (!$this->checkPermissions(
             $request->headers->get('authorization'),
-            self::SUPERADMIN )) {
+            [self::SUPERADMIN] )) {
             return $response->setData('Access Denied');
         }
         $result = $this->commandBus->handle(

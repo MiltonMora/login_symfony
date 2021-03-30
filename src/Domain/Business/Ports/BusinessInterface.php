@@ -11,4 +11,6 @@ interface BusinessInterface
 
     public function getBusinessById(string $businessId);
 
+    public function getAll(): array;
+
 }
