@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Application/Business/Command/GetBusinessCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Business/GetBusinessHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Rol/Command/GetRolesCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/Rol/GetRolesHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Api/Rol/RolController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/ChangeStatusHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Users/Command/ChangeStatusCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/Command/NewUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/Command/NewUserCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/NewUserHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/NewUserHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/AbstractApiController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Api/Business/BusinessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/Business/BusinessController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Api/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Api/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Business/Ports/BusinessInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Business/Ports/BusinessInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Users/Ports/RolInterface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventListener/JWTCreatedListener.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Business/BusinessRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Business/BusinessRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/RolRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/RolRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +175,9 @@
       <workItem from="1615402125639" duration="3845000" />
       <workItem from="1615814547185" duration="8132000" />
       <workItem from="1616846722582" duration="6570000" />
-      <workItem from="1617096448966" duration="6701000" />
+      <workItem from="1617096448966" duration="7314000" />
+      <workItem from="1617184467082" duration="5107000" />
+      <workItem from="1617288542302" duration="1450000" />
     </task>
     <servers />
   </component>
@@ -212,26 +201,26 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="422" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1614886841314" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1616854820462">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1617186626117">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1616854820462" />
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1617186626117" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1614940588666">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1614940588666" />
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616854809738">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617189627346">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1616854809738" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1617189627346" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1613234975532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1613234975532" />
-    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1616854395318">
+    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1617186552009">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1616854395318" />
+    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1617186552009" />
     <state x="517" y="292" key="NewPhpFileDialog" timestamp="1612898882375">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

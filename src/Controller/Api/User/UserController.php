@@ -3,6 +3,7 @@
 
 namespace App\Controller\Api\User;
 
+use App\Application\Users\Command\ChangeStatusCommand;
 use App\Application\Users\Command\NewRolCommand;
 use App\Application\Users\Command\NewUserRolCommand;
 use Symfony\Component\HttpFoundation\Request;
@@ -93,6 +94,26 @@ class UserController extends AbstractApiController
             new NewUserRolCommand(
                 $request->get('email'),
                 $request->get('rol')
+            )
+        );
+        $response->setData($result);
+        return $response;
+    }
+
+    /**
+     *  @Route("/change-status", methods={"POST"})
+     */
+    public function changeStatusByEmail(Request $request)
+    {
+        $response = new JsonResponse();
+        if (!$this->checkPermissions(
+            $request->headers->get('authorization'),
+            [self::ADMIN] )) {
+            return $response->setData('Access Denied');
+        }
+        $result = $this->commandBus->handle(
+            new ChangeStatusCommand(
+                $request->get('email')
             )
         );
         $response->setData($result);
