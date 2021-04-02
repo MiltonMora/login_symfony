@@ -62,6 +62,7 @@ class GetUsersHandler
                         $pBusiness = $this->getBusiness($value->getId());
                     }
                    array_push ($dt, [
+                       "id" => $value->getId(),
                        "name" => $value->getName(),
                        "email" => $value->getEmail(),
                        "status" => $value->isStatus(),
