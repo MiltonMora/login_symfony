@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02092b58-745f-4c27-b41c-550e1d4e3c3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/orm/Courses/Courses.orm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/Courses/NewCourseHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Courses/Model/Courses.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Courses/Ports/CourseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/Courses/CoursesRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/Users/GetUsersHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Users/GetUsersHandler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,21 +135,21 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Application/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/orm/Courses" />
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ourproyect\config\orm\Courses" />
+      <recent name="C:\laragon\www\ourproyect\src\Repository\Courses" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Users" />
+      <recent name="C:\laragon\www\ourproyect\src\Application\Users\Command" />
+      <recent name="C:\laragon\www\ourproyect\src\Controller\Api\User" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\ourproyect\src\Controller\Api\Business" />
       <recent name="C:\laragon\www\ourproyect\src\Domain\Users\Model" />
       <recent name="C:\laragon\www\ourproyect\src\Domain\Users" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\ourproyect\src\Application\Users" />
-      <recent name="C:\laragon\www\ourproyect\src\Application\Users\Command" />
-      <recent name="C:\laragon\www\ourproyect\src\Controller\Api\User" />
-      <recent name="C:\laragon\www\ourproyect\src\Application\Business" />
-      <recent name="C:\laragon\www\ourproyect\src\Application\Business\Command" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -176,7 +181,8 @@
       <workItem from="1617096448966" duration="7314000" />
       <workItem from="1617184467082" duration="5107000" />
       <workItem from="1617288542302" duration="1452000" />
-      <workItem from="1617377706595" duration="152000" />
+      <workItem from="1617377706595" duration="1221000" />
+      <workItem from="1618914412220" duration="3786000" />
     </task>
     <servers />
   </component>
@@ -200,30 +206,30 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="422" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1614886841314" />
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1617186626117">
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1618916038385">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1617186626117" />
+    <state x="488" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1618916038385" />
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1614940588666">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1614940588666" />
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617189627346">
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1618917644006">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1617189627346" />
+    <state x="413" y="124" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.738@0.0.1366.738" timestamp="1618917644006" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1613234975532">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1613234975532" />
-    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1617186552009">
+    <state x="486" y="183" key="NewPhpClassDialog" timestamp="1618915691350">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1617186552009" />
-    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1612898882375">
+    <state x="486" y="183" key="NewPhpClassDialog/0.0.1366.738@0.0.1366.738" timestamp="1618915691350" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1618915542234">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1612898882375" />
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1618915542234" />
     <state x="184" y="11" key="SettingsEditor" timestamp="1612723817382">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

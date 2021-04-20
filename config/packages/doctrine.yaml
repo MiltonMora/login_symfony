@@ -20,3 +20,8 @@ doctrine:
                 type: xml
                 dir: '%kernel.project_dir%/config/orm/business'
                 prefix: App\Domain\Business\Model
+            Courses:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/config/orm/Courses'
+                prefix: App\Domain\Courses\Model
